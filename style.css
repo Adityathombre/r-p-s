@@ -56,7 +56,11 @@ img {
 .msg-container {
     margin-top: 20%; /* Adjust margin based on percentage of viewport height */
     text-align: center;
-    position: relative;
+    position: absolute; /* Position the container relative to the nearest positioned ancestor */
+    top: 50%; /* Position the container 50% from the top of its containing element */
+    left: 50%; /* Position the container 50% from the left of its containing element */
+    transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
+    width: 90%; /* Adjust width based on percentage of viewport width */
 }
 
 #msg {
