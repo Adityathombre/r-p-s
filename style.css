@@ -1,79 +1,68 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-h1{
+h1 {
     background-color: rgb(17, 17, 32);
     color: white;
-    height: 5rem;
+    height: 10%; /* Adjust height based on percentage of viewport height */
     text-align: center;
     line-height: 5rem;
 }
 
-.choice{
-    height: 100px;
-    width: 100px;
-   
+.choice {
+    height: 10vw; /* Use viewport units for responsive sizing */
+    width: 10vw; /* Use viewport units for responsive sizing */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-img{
-    height: 100px;
-    width: 100px;
+img {
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
-
 }
-.choices{
+
+.choices {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: 6rem;
-}
-.choice:hover{
-    cursor: pointer;
-    opacity: 0.5;
-   
-    
+    margin-top: 10%; /* Adjust margin based on percentage of viewport height */
 }
 
-.score-board{
+.choice:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.score-board {
     display: flex;
-    gap: 7rem;
+    gap: 7%;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 4rem;
+    margin-top: 6%; /* Adjust margin based on percentage of viewport height */
 }
 
-#user-score,#computer-score{
+#user-score, #computer-score {
     font-size: 4rem;
 }
 
 .msg-container {
-    margin-top: 10rem;
-    text-align: center; /* Center the content horizontally */
+    margin-top: 20%; /* Adjust margin based on percentage of viewport height */
+    text-align: center;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   
 }
 
 #msg {
     color: white;
     background-color: black;
-    font-size: 2rem;
+    font-size: 2vw; /* Use viewport units for responsive font size */
     padding: 1rem;
-    text-align: center; /* Center the text horizontally */
-    height: 3rem;
-    display: inline; /* Keep the display inline */
     border-radius: 1rem;
 }
-
-
-
